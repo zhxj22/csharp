@@ -5,6 +5,20 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpPractice", "CsharpPractice\CsharpPractice.csproj", "{044FE259-F68F-4E07-9744-B60371B6B56D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPool", "ThreadPool\ThreadPool.csproj", "{F496BC56-211A-474D-ABC6-7AF8AE357A21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPoolSimple", "ThreadPoolSimple\ThreadPoolSimple.csproj", "{1DCED4BF-DC96-4DF4-BC60-4E9FA5149D45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirctoryCopy", "DirctoryCopy\DirctoryCopy.csproj", "{90D1938D-4C72-4607-983E-1C5B0465888C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encrypt", "Encrypt\Encrypt.csproj", "{8B29AC77-A766-41AD-916C-C7693D4D3F88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Download", "ConsoleApplication1\Download.csproj", "{C76AD620-05C9-4420-B978-2AF8ABDA5A73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Litjson_exc", "Litjson_exc\Litjson_exc.csproj", "{F9E53710-E9C3-488C-8AA6-34DFF296A7F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq", "Linq\Linq.csproj", "{F77818DE-1D05-48A8-A3BE-6F7D0BB2906A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +29,34 @@ Global
 		{044FE259-F68F-4E07-9744-B60371B6B56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{044FE259-F68F-4E07-9744-B60371B6B56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{044FE259-F68F-4E07-9744-B60371B6B56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F496BC56-211A-474D-ABC6-7AF8AE357A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F496BC56-211A-474D-ABC6-7AF8AE357A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F496BC56-211A-474D-ABC6-7AF8AE357A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F496BC56-211A-474D-ABC6-7AF8AE357A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DCED4BF-DC96-4DF4-BC60-4E9FA5149D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DCED4BF-DC96-4DF4-BC60-4E9FA5149D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DCED4BF-DC96-4DF4-BC60-4E9FA5149D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DCED4BF-DC96-4DF4-BC60-4E9FA5149D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D1938D-4C72-4607-983E-1C5B0465888C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D1938D-4C72-4607-983E-1C5B0465888C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D1938D-4C72-4607-983E-1C5B0465888C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D1938D-4C72-4607-983E-1C5B0465888C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B29AC77-A766-41AD-916C-C7693D4D3F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B29AC77-A766-41AD-916C-C7693D4D3F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B29AC77-A766-41AD-916C-C7693D4D3F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B29AC77-A766-41AD-916C-C7693D4D3F88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C76AD620-05C9-4420-B978-2AF8ABDA5A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C76AD620-05C9-4420-B978-2AF8ABDA5A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C76AD620-05C9-4420-B978-2AF8ABDA5A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C76AD620-05C9-4420-B978-2AF8ABDA5A73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9E53710-E9C3-488C-8AA6-34DFF296A7F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E53710-E9C3-488C-8AA6-34DFF296A7F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E53710-E9C3-488C-8AA6-34DFF296A7F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E53710-E9C3-488C-8AA6-34DFF296A7F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F77818DE-1D05-48A8-A3BE-6F7D0BB2906A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F77818DE-1D05-48A8-A3BE-6F7D0BB2906A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F77818DE-1D05-48A8-A3BE-6F7D0BB2906A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F77818DE-1D05-48A8-A3BE-6F7D0BB2906A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
-
 namespace CsharpPractice
 {
+#if UNITY_ANDROID && !UNITY_EDITOR
+		OVR_Media_Surface_Init();
+#endif
+
     class Program
     {
         public static void CountTo100()
@@ -23,10 +26,26 @@ namespace CsharpPractice
         }
         static void Main(string[] args)
         {
+            string mAppVersionName = "01.3.0";
+            if (mAppVersionName.Contains("CB.") == false)
+            {
+                string[] list = mAppVersionName.Split('.');
+                string tmp = list.Length > 1 ? list[0] : "";//first version handle
+                if (tmp.Length == 1)// first version number length is 1
+                    tmp = "0" + tmp;
+                list[0] = tmp;
+                StringBuilder sb = new StringBuilder();
+                foreach (string str in list)
+                    sb.Append("." + str);
+                mAppVersionName = "CB" + sb.ToString() + string.Format("({0})", "Official_Chanel");
+            }
+
+
             //如何启动无参数的线程
             Thread thread = new Thread(CountTo100);
             thread.Start();
             thread.Join();
+
             Thread thread2 = new Thread(CountTo100);
             thread2.Start();
             thread2.Join();
