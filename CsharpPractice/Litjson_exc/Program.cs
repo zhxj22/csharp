@@ -12,6 +12,7 @@ namespace Litjson_exc
         static string mFileName = "joystick.json";
         static void Main(string[] args)
         {
+            JoystickControlJsonHandler.WriteDefaultJoystickConfig();
             List<string> names = JoystickControlJsonHandler.GetJoystickNames();
             JoystickControlKeyInfo keyInfo = JoystickControlJsonHandler.GetJoystickContollerKeyInfoByName("iJoy Controller");
             string json = JoystickControlJsonHandler.GetJsonStrContent();

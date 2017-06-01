@@ -117,7 +117,7 @@ namespace CSEncryptDecrypt
         }
         enum AAA
         {
-            up, down
+            up=1, down
         }
         struct MyType
         {
@@ -128,9 +128,9 @@ namespace CSEncryptDecrypt
         public static void Main(string[] args)
         {
             //Dictionary<string, float> dict = new Dictionary<string, float>();
-           // dict.Add("aaa", 1.2f);
+            // dict.Add("aaa", 1.2f);
             //dict.Add("aaa", 0.2f);
-            
+            AAA c;
             MyType dd;
             //PgQfjrq7RojqXUQQphL+awLKjNL67giHe5LsHemaHgjrtwtONGkaeA==
             string a = EncryptDES("8a8c929e57fea8fe0158058e0f8d0001", "iqiyivrt");

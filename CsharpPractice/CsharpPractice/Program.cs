@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 using System.Threading;
 namespace CsharpPractice
 {
@@ -24,8 +25,42 @@ namespace CsharpPractice
         {
             Console.WriteLine( 1 + (int)a);
         }
+
+        public static string[] GetAllExceptions()
+        {
+            string[] lines = System.IO.File.ReadAllLines(@"all_exceptions.txt");
+            return lines;
+        }
+
         static void Main(string[] args)
         {
+            Assembly assembly = Assembly.GetExecutingAssembly(); // 获取当前程序集 
+            int n = 0;
+            foreach(string exceptionName in GetAllExceptions())
+            {
+                try
+                {
+                    Type type = Type.GetType(exceptionName);
+                    if (type == null)
+                        continue;
+                    n++;
+                    object[] parameters = new object[1];
+                    string lpCh = exceptionName;
+                    parameters[0] = lpCh;
+                    object obj = Activator.CreateInstance(type, parameters);
+                    throw new Exception("Damn!!!, Exception happened", (Exception)(obj));
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+                Console.WriteLine("========================================");
+            }
+            return;
+            DateTime dt = DateTime.Now;
+            Console.WriteLine(dt);
+            string time = "Current Time:" + dt.ToString("yyyy-MM-dd:HH:mm:ss");
+            Console.WriteLine(time);
             string mAppVersionName = "01.3.0";
             if (mAppVersionName.Contains("CB.") == false)
             {
